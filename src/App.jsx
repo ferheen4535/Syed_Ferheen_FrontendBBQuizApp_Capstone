@@ -8,7 +8,7 @@ import Results from "./components/Results.jsx";
 import Banner from "./components/Banner.jsx";
 import Profile from "./components/Profile.jsx";
 import Products from "./components/Products.jsx";
-// import Unsubscribe from "./components/Unsubscribe.jsx";
+// import unsubscribe from "./components/unsubscribe.jsx";
 
 import "./App.css";
 
@@ -28,7 +28,7 @@ function App() {
             <Route path="/banner" element={<Banner />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/unsubscribe" element={<Unsubscribe />} />
+            <Route path="/unsubscribe" element={<unsubscribe />} />
           </Routes>
 
           <Footer />
@@ -37,6 +37,7 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
 
