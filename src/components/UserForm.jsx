@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 /* API base */
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5055';
+const API = import.meta.env.VITE_API_URL || 'https://syed-ferheen-backendproductquizapp.onrender.com/';
 
 /* helper */
 const createUser = async (userData) =>
