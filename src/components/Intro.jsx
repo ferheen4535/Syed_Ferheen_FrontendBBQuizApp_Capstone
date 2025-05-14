@@ -11,11 +11,13 @@ export default function Intro() {
   return (
     <div className="intro-container">
     <div>
-      <p><b>Find The Right Badmaash Beards Product For You</b> <br /> <br />
-         Discover the perfect products tailored to elevate your beard 
-        care routine. <br /> 
-         Answer a few simple questions 
-        and let us guide you to the perfect Badmaash products for you.
+      <p style={{ fontSize: '24px', fontWeight: 'bold' }}>
+        Find The Right Badmaash Beards Products For You</p> 
+ 
+         
+         <p>Answer a few simple questions 
+        and let us guide you to the perfect Badmaash products tailored to elevate your beard 
+        care routine.
        </p>
       <button onClick={handleStart}>Start Quiz</button>
       </div>

@@ -53,7 +53,7 @@ nav {
 	}
 
 	&:not(.active):hover {
-		color: rgb(244, 95, 8);
+		color: #f06c00;
 	}
 
 	&:hover > .icon .subicon {
@@ -109,6 +109,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px;
 
 }
 
@@ -141,11 +142,9 @@ body {
   align-items: center;     /* Horizontal center */
   justify-content: center; /* Vertical center */
   text-align: center;
-  border-color: rgb(255, 115, 0);
+  border-color: #f06c00;
   
 }
-
-
 
 /*question display in quiz*/
 
@@ -162,33 +161,31 @@ body {
   list-style: none;
   font-size: 16px;
   color: #ffffff;
-  border: 1px solid rgb(237, 103, 8);
+  border: 1px solid #f06c00;
   border-radius: 16px;
   padding: 11px;
   margin-top: 15px;
   cursor: pointer;
-  
   transition: background-color 0.3s, transform 0.2s;
 }
 
 /* Hover Effect */
 .options-list li:hover {
   background-color: #000000;
-  transform: translateY(-2px);
+  transform: translateY(-2px);     
+  /* trigger */
 }
 
 /* Selected Option Styling */
 .options-list .selected {
-  background-color: #ab5f21;
+  background-color: #f06c00;
   color: white;
   font-weight: bold;
   border-radius: 16px;
   transform: scale(1.02);
 }
 
-
 /* new nav */
-
 * {
 	 margin: 0;
   padding: 0;
@@ -205,7 +202,7 @@ body {
   width: 700px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #ff6600;
+  border: 1px solid #f06c00;
   border-radius: 12px;
   text-align: center;
 }
@@ -218,7 +215,7 @@ body {
 }
 
 .intro-container button {
-  background-color: #e05a00;
+  background-color: #000000;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -229,10 +226,9 @@ body {
 }
 
 .intro-container button:hover {
-  background-color: #000000;
+  background-color: #ff6a00;
+  color: black;
 }
-
-
 
 .products-page {
   padding: 2rem;
@@ -262,6 +258,7 @@ body {
 }
 
 .product-card:hover {
+  
   transform: translateY(-5px);
 }
 
@@ -283,7 +280,7 @@ body {
 .product-card a {
   display: inline-block;
   padding: 0.5rem 0.5rem;
-  background-color: #e15803;
+  background-color: #000000;
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -291,7 +288,8 @@ body {
 }
 
 .product-card a:hover {
-  background-color: #030303;
+  background-color: #f06c00;
+  color: black;
 }
 
 .product-image {
@@ -306,17 +304,15 @@ body {
   width: 300px;
   margin: 50px auto;
   text-align: center;
-  
+
 }
 
 .admin-login-form input {
   width: 100%;
   margin: 10px 0;
   padding: 8px;
-  border-color: rgb(221, 92, 6)
+  border-color: #f06c00;
 }
-
-
 
 .error-msg {
   color: rgb(225, 225, 225);
@@ -343,7 +339,7 @@ body {
 
 .unsubscribe-table th,
 .unsubscribe-table td {
-  border: 1px solid #f06807;
+  border: 1px solid #f06c00;
   padding: 10px;
 }
 
@@ -352,7 +348,7 @@ body {
 }
 
 .unsubscribe-delete-btn {
-  background-color: #d76903;
+  background-color: #f06c00;
   color: rgb(223, 220, 220);
   border: none;
   padding: 6px 12px;
@@ -370,7 +366,7 @@ body {
 }
 
 .link a {
-  color: #ff6600;
+  color: #f06c00;
   text-decoration: none;
   font-size: 15px;
 
@@ -396,7 +392,7 @@ text-align: center;
 }
 
 .admin-container p {
-  color: #ff7300;
+  color: #f06c00;
   margin-bottom: 20px;
   margin: auto;
   margin-top: 20px;
@@ -427,7 +423,7 @@ text-align: center;
 
 .admin-actions a {
   text-decoration: none;
-  color: #ff7300;
+  color: #f06c00;
   font-weight: bold;
   transition: color 0.2s;
 }
@@ -442,7 +438,7 @@ text-align: center;
   margin: 20px auto;
   padding: 50px;
   padding-top: 10px;
-  border: 1px solid #e65c00;
+  border: 1px solid #f06c00;
   border-radius: 10px;
   text-align: center;
   color: #ffffff;
@@ -467,7 +463,7 @@ text-align: center;
 
 .profile-form input {
   padding: 10px;
-  border: 1px solid #e65c00;
+  border: 1px solid #f06c00;
   border-radius: 6px;
   font-size: 16px;
 }
@@ -490,7 +486,7 @@ text-align: center;
 }
 
 .profile-form button:hover:not(:disabled) {
-  background-color: #e65c00;
+  background-color: #f06c00;
 }
 
 
@@ -498,7 +494,7 @@ text-align: center;
 .profile-wrapper a {
   display: inline-block;
   margin-top: 20px;
-  color: #ff6600;
+  color: #f06c00;
   text-decoration: none;
   font-weight: bold;
 }
@@ -513,7 +509,7 @@ text-align: center;
  width: 500px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #f06c00;
   border-radius: 12px;
 }
 
@@ -538,13 +534,13 @@ text-align: center;
 .userform-container input {
   padding: 10px 12px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f06c00;
   border-radius: 8px;
   font-size: 16px;
 }
 
 .userform-container button {
-  background-color: #ff6600;
+  background-color: #000000;
   color: rgb(255, 255, 255);
   padding: 12px 25px;
   border: none;
@@ -555,8 +551,8 @@ text-align: center;
 }
 
 .userform-container button:hover {
-  background-color: #000000;
-  color: rgb(249, 97, 8);
+  background-color: #f06c00;
+  color: rgb(0, 0, 0);
 }
 
 .userform-container p {
@@ -571,7 +567,7 @@ text-align: center;
   width: 600px;
   margin: 30px auto;
   padding: 30px;
-  border: 2px solid #f06800;
+  border: 2px solid #f06c00;
   border-radius: 16px;
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -579,13 +575,13 @@ text-align: center;
 
 .result-container h2 {
   font-size: 28px;
-  color: #fc7100;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .result-container h4 {
   font-size: 20px;
-  color: #f6f6f6;
+  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -603,15 +599,14 @@ text-align: center;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ff6a00fa;
-  color: rgb(0, 0, 0);
-
+  background-color: #000000fa;
+  color: rgb(255, 255, 255);
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .amazon-link:hover {
-  background-color: #000000;
- color:white;
+  background-color:#f06c00;
+ color:rgb(0, 0, 0);
 }

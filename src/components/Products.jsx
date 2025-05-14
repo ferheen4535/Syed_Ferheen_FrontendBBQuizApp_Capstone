@@ -65,7 +65,6 @@ const products = [
     link: 'https://www.amazon.com/dp/B0DPR6LLW9?ref=emc_s_m_5_i_atc&th=1',
   },
 
-
   {
     name: 'Beard Butter 4-Pack Sampler',
     price: '$22.00',
@@ -75,9 +74,6 @@ const products = [
   },
 
 ];
-
-
-
 
 export default function Products() {
   return (
@@ -95,13 +91,6 @@ export default function Products() {
           </div>
         ))}
       </div>
-
-        <div>
-
-
-        </div>
-
-
     </div>
     
   );
