@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import UserForm from "./components/UserForm";
 import QuizSection from "./components/QuizSection";
 import Results from "./components/Results";
-import Banner from "./components/Banner";
+import Banner from "./components/Banner.jsx"
 import Profile from "./components/Profile";
 import Products from "./components/Products";
 import Unsubscribe from "./components/Unsubscribe";
