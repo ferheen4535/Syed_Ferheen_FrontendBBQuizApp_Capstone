@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:5055';
 
@@ -79,9 +80,9 @@ export default function Profile() {
       </form>
       {updateMsg && <p>{updateMsg}</p>}
 
-      <hr />
+      <br/>
 
-     <a href="Unsubscribe.jsx">Unsubscribe</a>
+    <div> <Link to="/unsubscribe">Delete Users</Link> </div>
 
     </div>
   );

@@ -1,67 +1,51 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
-
-
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:5055';
 
 export default function Unsubscribe() {
   const [users, setUsers] = useState([]);
 
-  const { id } = useParams();
-
   useEffect(() => {
-    loadUsers();
+    fetchUsers();
   }, []);
 
-  const loadUsers = async () => {
-    const result = await axios.get(API);
-    setUsers(result.data);
+  const fetchUsers = async () => {
+    const res = await axios.get(`${API}/quiz/users`);
+    setUsers(res.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:quiz/user/${id}`);
-    loadUsers();
+    if (confirm('Are you sure you want to unsubscribe this user?')) {
+      await axios.delete(`${API}/quiz/users/${id}`);
+      fetchUsers();
+    }
   };
 
   return (
-    <div className="container">
-      <div className="py-4">
-        <table className="table border shadow">
+    <div className="unsubscribe-container">
+      <h2>Delete Users</h2>
+      <div className="unsubscribe-table-wrapper">
+        <table className="unsubscribe-table">
           <thead>
             <tr>
-              <th scope="col">S.N</th>
-              <th scope="col">Name</th>
-              <th scope="col">Username</th>
-              <th scope="col">Email</th>
-              <th scope="col">Action</th>
+              <th>#</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             {users.map((user, index) => (
-              <tr>
-                <th scope="row" key={index}>
-                  {index + 1}
-                </th>
-                <td>{user.name}</td>
+              <tr key={user._id}>
+                <td>{index + 1}</td>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td>
-                  <Link
-                    className="btn btn-primary mx-2"
-                    to={`/viewuser/${user.id}`}
-                  >
-                    View
-                  </Link>
-                  <Link
-                    className="btn btn-outline-primary mx-2"
-                    to={`/edituser/${user.id}`}
-                  >
-                    Edit
-                  </Link>
                   <button
-                    className="btn btn-danger mx-2"
-                    onClick={() => deleteUser(user.id)}
+                    className="unsubscribe-delete-btn"
+                    onClick={() => deleteUser(user._id)}
                   >
                     Delete
                   </button>
@@ -71,6 +55,7 @@ export default function Unsubscribe() {
           </tbody>
         </table>
       </div>
+      <div className="link"> <Link to="/Profile">Update Users</Link> </div>
     </div>
   );
 }

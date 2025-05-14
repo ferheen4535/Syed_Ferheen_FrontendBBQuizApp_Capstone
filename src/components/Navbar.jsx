@@ -27,8 +27,10 @@ const Navbar = () => {
         </span>
         
   <span className="nav-item">
-          <NavLink to="/Profile">Profile</NavLink>
+          <NavLink to="/AdminLogin">Admin</NavLink>
         </span>
+
+        
 
       </nav>
     </div>

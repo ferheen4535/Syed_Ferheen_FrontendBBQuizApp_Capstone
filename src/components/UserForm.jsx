@@ -43,32 +43,33 @@ export default function UserForm() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h2>User Info</h2>
+    <div className="userform-container">
+    <form onSubmit={handleSubmit}>
+      <h2>Let's get to know you better first!</h2>
+      
 
-        <label>Username</label>
-        <input
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-          required
-        />
+      <label>Name</label>
+      <input
+        name="username"
+        value={formData.username}
+        onChange={handleChange}
+        required
+      />
 
-        <label>Email</label>
-        <input
-          name="email"
-          type="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+      <label>Email</label>
+      <input
+        name="email"
+        type="email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
 
-        {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button type="submit" disabled={loading}>
-          {loading ? 'Submitting…' : 'Start Quiz'}
-        </button>
-      </form>
-    </div>
+      {error && <p>{error}</p>}
+      <button type="submit" disabled={loading}>
+        {loading ? 'Submitting…' : 'Start Quiz'}
+      </button>
+    </form>
+  </div>
   );
 }
