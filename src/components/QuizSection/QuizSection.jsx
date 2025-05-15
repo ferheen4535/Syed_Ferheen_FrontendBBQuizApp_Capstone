@@ -4,13 +4,13 @@ import axios from "axios";
 import "./QuizSection.css";
 
 const QuizSection = () => {
-  const [questions, setQuestions] = useState([]); //state hook used, quesitons from mongodb to update questions in browser//
-  const [currentQuestion, setCurrentQuestion] = useState(0); //quesiton will start [0] and keep track //
-  const [answerIndex, setAnswerIndex] = useState(null); //tracks when the answer is selected//
-  const navigate = useNavigate(); //hook to direct to results//
+  const [questions, setQuestions] = useState([]); // state hook used, questions from MongoDB to update questions in browser
+  const [currentQuestion, setCurrentQuestion] = useState(0); // question will start at [0] and keep track
+  const [answerIndex, setAnswerIndex] = useState(null); // tracks when the answer is selected
+  const navigate = useNavigate(); // hook to direct to results
 
+  // --- FETCH QUESTIONS from MongoDB ---
   useEffect(() => {
-    // fetches questions//
     const fetchQuestions = async () => {
       try {
         const res = await axios.get("http://localhost:5055/quiz/questions");
@@ -19,15 +19,18 @@ const QuizSection = () => {
         console.error("Failed to fetch quiz questions:", error);
       }
     };
-
     fetchQuestions();
   }, []);
 
+  // --- HANDLE Answer Selection ---
   const handleAnswerClick = async (index) => {
     setAnswerIndex(index);
 
+   
     setTimeout(async () => {
-      // Question 3
+      const isLastQuestion = currentQuestion === questions.length - 1;
+
+         // Question 3
       //text: "What’s your vibe?"//
       //answer index:
       //0: "Just starting out (stubble stage)"
@@ -44,6 +47,7 @@ const QuizSection = () => {
           const resultId = res.data.resultId;
           if (resultId) {
             navigate(`/results/${resultId}`);
+            return; // Stop further code, redirect to result
           } else {
             alert("No result found. Try again.");
           }
@@ -56,14 +60,19 @@ const QuizSection = () => {
         setCurrentQuestion((prev) => prev + 1);
         setAnswerIndex(null);
       }
-    }, 500);
+
+    }, 600); // pause time between questions
   };
 
+  // --- Loading State ---
   if (!questions[currentQuestion]) return <p>Loading question...</p>;
 
   const { text, options } = questions[currentQuestion];
 
-  //html formating//
+
+  
+
+  // --- Render HTML ---
   return (
     <div className="quiz-container">
       <div className="question">{text}</div>
@@ -84,6 +93,7 @@ const QuizSection = () => {
 };
 
 export default QuizSection;
+
 
 
 //sources:
