@@ -1,27 +1,44 @@
-.app-border {
-  border: 1px solid #525252;
-  max-width: 1000px;
-}
-
-
-/* for app position */
 .app-container {
-  width: 1000px;
-  height: 700px;
-  margin: 0 auto 0 auto; /* center horizontally */
-  padding-top: -50px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* fixed postion for nav and banner*/
- 
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-body {
-	background: linear-gradient(124deg, rgba(0, 0, 0, 1) 0%, rgb(71, 71, 71) 49%, rgb(44, 44, 44) 49%, rgb(71, 71, 71) 49%, rgba(0, 0, 0, 1) 100%);
-	display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
 
+.app-border {
+  width: 1000px;
+  border: 1px solid #525252;
+  box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+  background: linear-gradient(124deg, rgba(0, 0, 0, 1) 0%, rgb(71, 71, 71) 49%, rgb(44, 44, 44) 49%, rgb(71, 71, 71) 49%, rgba(0, 0, 0, 1) 100%);
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+  }
 }
