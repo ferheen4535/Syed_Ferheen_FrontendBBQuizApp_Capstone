@@ -1,0 +1,55 @@
+.admin-container {
+  width: 500px;
+ margin: 50px auto;
+text-align: center;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.admin-container h1 {
+  margin: auto;
+  margin-bottom: 60px;
+  font-size: 28px;
+  margin: auto;
+}
+
+.admin-container p {
+  color: #f06c00;
+  margin-bottom: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.admin-actions h3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin: auto;
+}
+
+.admin-actions ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.admin-actions li {
+  background-color: black;
+  padding: 5px;
+  width: 300px;
+  margin: 10px 0;
+  margin: auto;
+  margin-bottom: 30px;
+   margin-top: 30px;
+   border-radius: 4px;
+}
+
+.admin-actions a {
+  text-decoration: none;
+  color: #f06c00;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.admin-actions a:hover {
+  color: #f0e4d8;
+}

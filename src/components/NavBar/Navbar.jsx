@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 import feather from 'feather-icons'; // feather-icons installed
+import "./Navbar.css";
+
 
 const Navbar = () => {
   useEffect(() => {

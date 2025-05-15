@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import "./Results.css";
+
 
 const amazonLinks = {
   "The Fresh Rebel": "https://www.amazon.com/dp/B0DPNJDWBY/ref=twister_B0DRW3GZBQ?_encoding=UTF8&th=1",

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import "./Profile.css";
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:5055';
 

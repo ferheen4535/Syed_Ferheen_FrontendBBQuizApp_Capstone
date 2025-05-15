@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "./QuizSection.css";
 
 const QuizSection = () => {
   const [questions, setQuestions] = useState([]); //state hook used, quesitons from mongodb to update questions in browser//

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import "./Admin.css";
 
 export default function Admin() {
   const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;

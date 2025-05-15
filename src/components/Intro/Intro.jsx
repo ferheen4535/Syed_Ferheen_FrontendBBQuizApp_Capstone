@@ -1,4 +1,6 @@
-import React from 'react';
+import "./Intro.css";
+
+
 import { useNavigate } from 'react-router-dom';
 
 export default function Intro() {

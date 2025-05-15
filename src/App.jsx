@@ -1,17 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Intro from "./components/Intro";
-import Footer from "./components/Footer";
-import UserForm from "./components/UserForm";
-import QuizSection from "./components/QuizSection";
-import Results from "./components/Results";
-import Banner from "./components/Banner.jsx"
-import Profile from "./components/Profile";
-import Products from "./components/Products";
-import Unsubscribe from "./components/Unsubscribe";
-import AdminLogin from "./components/AdminLogin.jsx";
+import Navbar from "./components/NavBar/Navbar.jsx";
+import Intro from "./components/Intro/Intro.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import UserForm from "./components/UserForm/UserForm.jsx";
+import QuizSection from "./components/QuizSection/QuizSection.jsx";
+import Results from "./components/Results/Results.jsx";
+import Banner from "./components/Banner/Banner.jsx"
+import Profile from "./components/Update/Profile.jsx";
+import Products from "./components/Products/Products.jsx";
+import Unsubscribe from "./components/Delete/Unsubscribe.jsx";
+import AdminLogin from "./components/AdminLogin/AdminLogin.jsx";
 
-import Admin from "./components/Admin.jsx";
+import Admin from "./components/Admin/Admin.jsx";
 
 import "./App.css";
 
