@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/readme.svg" alt="Badmaash Beards Quiz" width="700" />
+  <img src="./assets/readMe.svg" alt="Badmaash Beards Quiz" width="600" />
 </p>
 
 # Badmaash Beards 
