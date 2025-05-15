@@ -1,5 +1,4 @@
-
-![BadmaashBeards!]("Capstone\Frontend\readMe.svg")
+![header](image.png)
   
 
 # Badmaash Beards 
