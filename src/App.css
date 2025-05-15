@@ -1,27 +1,36 @@
 .app-border {
   border: 1px solid #525252;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 
 /* for app position */
 .app-container {
-  width: 800px;
+  width: 1000px;
   height: 700px;
-  margin: -20px auto 0 auto; /* center horizontally */
-  padding-top:5px;
+  margin: 0 auto 0 auto; /* center horizontally */
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* fixed postion for nav and banner*/
  
 }
 
+.banner-image {
+  width: 1000px;
+  border: 1px solid #525252;
+  display: block;
+  margin: 0 auto; /* center it horizontally */
+  
+}
+
+
 /* Navbar */
 
 nav,
 .nav-item {
 	display: flex;
-	width: 800px;
+	width: 1000px;
 
 }
 
@@ -41,7 +50,7 @@ nav {
 
 .nav-item {
 	align-items: center;
-	font-size: 0.8999rem;
+	font-size: 20px;
 	line-height: 1rem;
 	
 	min-width: 120px;
@@ -94,7 +103,7 @@ nav {
 
 .Navbar {
 	height: 100vh;
-	width: 100vw;
+	width: 1000px;
 	margin: 0;
 	padding-top: 50px;
 	background-color: #222;
@@ -109,21 +118,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: -20px;
 
 }
 
-.banner-image {
-  max-width: 800px;
-  display: block;
-  margin: 0 auto; /* center it horizontally */
-  border-bottom: 1px solid #525252;
-  border-top: 1px solid #525252;
-}
 
 
 .footer-image {
-  max-width: 800px; 
+  max-width: 1000px; 
   display: block;
   margin: 0 auto; /* center it horizontally */
   border-top: 1px solid #525252;
@@ -141,6 +143,7 @@ body {
   flex-direction: column;
   align-items: center;     /* Horizontal center */
   justify-content: center; /* Vertical center */
+  font-size: 35px;
   text-align: center;
   border-color: #f06c00;
   
@@ -156,10 +159,10 @@ body {
 
 /* Individual Option Styling */
 .options-list li {
-  width: 400px;
+  width: 700px;
   text-decoration: none;
   list-style: none;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
   border: 1px solid #f06c00;
   border-radius: 16px;
@@ -564,7 +567,7 @@ text-align: center;
 /* results */
 
 .result-container {
-  width: 600px;
+  width: 800px;
   margin: 30px auto;
   padding: 30px;
   border: 2px solid #f06c00;
@@ -580,18 +583,18 @@ text-align: center;
 }
 
 .result-container h4 {
-  font-size: 20px;
+  font-size: 25px;
   color: #ffffff;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .result-container p {
-  font-size: 16px;
+  font-size: 20px;
   color: #bdbdbd;
   line-height: 1.6;
   margin: 0 auto 20px;
-  max-width: 500px;
+  max-width: 900px;
 }
 
 
