@@ -1,4 +1,4 @@
-![jeader](image-1.png)
+![header](image-1.png)
   
 
 # Product Recommendation Quiz Application for Badmaash Beards
@@ -11,7 +11,6 @@ Badmaash Beards is a local small business I've been proud to build from the grou
 
 For my capstone project, I wanted to elevate this experience by developing a quiz app that guides customers to the right products with ease and fun. This project has been an exciting opportunity for me to combine my creative and technical skills, pushing myself further into full stack development.
 
-The Badmaash Beards Product Recommendation Quiz App is an interactive quiz that helps users find the right beard products based on their preferences and beard care needs.
 
 # Main Application Flow:
 
@@ -79,11 +78,11 @@ Enable sharing quiz results on social media with custom graphics.
 Track quiz engagement and user responses with basic analytics.
 Gather customer feedback for continuous improvement.
 
-## Wire Frames
+## Wireframes
+
+![alt text](image-6.png)
 
 ![alt text](image-2.png)
-
-![alt text](image-3.png)
 
 
 ## Screenshots
