@@ -25,7 +25,7 @@
 }
 
 .unsubscribe-delete-btn {
-  background-color: #f06c00;
+  background-color: #000000;
   color: rgb(223, 220, 220);
   border: none;
   padding: 6px 12px;
@@ -34,9 +34,8 @@
 }
 
 .unsubscribe-delete-btn:hover {
-  background-color: #443737;
+  background-color: #f06c00;
 }
-
 
 .link {
   margin-top: 30px;
@@ -45,6 +44,6 @@
 .link a {
   color: #f06c00;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
 
 }
