@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="./dist/assets/readMe.svg" alt="Badmaash Beards Quiz" width="600" />
+![BadmaashBeards!]("readMe.svg")
+  
 </p>
 
 # Badmaash Beards 
