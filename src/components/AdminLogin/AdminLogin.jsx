@@ -30,7 +30,7 @@ export default function AdminLogin() {
     <div className="admin-login-container">
       <h2>Admin Login</h2>
       <form onSubmit={handleSubmit} className="admin-login-form">
-        <label>Email:</label>
+        <label>Email</label>
         <input
           type="email"
           name="email"
@@ -39,7 +39,7 @@ export default function AdminLogin() {
           required
         />
 
-        <label>Password:</label>
+        <label>Password</label>
         <input
           type="password"
           name="password"
