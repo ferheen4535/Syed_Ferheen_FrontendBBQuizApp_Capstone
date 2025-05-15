@@ -1,7 +1,6 @@
-<p align="center">
+
 ![BadmaashBeards!]("readMe.svg")
   
-</p>
 
 # Badmaash Beards 
 ## Capstone Project | Frontend (MERN Stack)
