@@ -2,7 +2,7 @@
   <img src="./images/readMe.svg" alt="Badmaash Beards Quiz" width="700" />
 </p>
 
-# 🧔‍♂️ Badmaash Beards 
+# Badmaash Beards 
 ## Capstone Project | Frontend (MERN Stack)
 
 Welcome to the Badmaash Beards Product Recommendation Quiz App!  
