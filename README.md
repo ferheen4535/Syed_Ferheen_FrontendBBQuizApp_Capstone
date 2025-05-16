@@ -7,7 +7,7 @@
 
 Welcome to the Badmaash Beards Product Recommendation Quiz App — a simple, interactive quiz that helps users find the perfect Badmaash Beards products tailored to their unique style and grooming needs.
 
-Badmaash Beards is a local small business I've been proud to build from the ground up. From designing the logo and packaging to managing Amazon listings with SEO optimization, A+ content creation, social media marketing, and website design — I've been involved in every step of the brand's journey.
+Badmaash Beards is a local small business I've been proud to help build from the ground up. From designing the logo and packaging to managing Amazon listings with SEO optimization, A+ content creation, social media marketing, and website design — I've been involved in every step of the brand's journey.
 
 For my capstone project, I wanted to elevate this experience by developing a quiz app that guides customers to the right products with ease and fun. This project has been an exciting opportunity for me to combine my creative and technical skills, pushing myself further into full stack development.
 
@@ -28,7 +28,7 @@ For my capstone project, I wanted to elevate this experience by developing a qui
 - Direct Amazon Link to view/purchase the recommended product.
 
 ## Admin Panel:
-- dmins can update usernames and delete users from the database.
+- Admins can update usernames and delete users from the database.
 - Access is protected by an Admin Login page.
 
 ## Products Page:
